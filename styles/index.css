@@ -1,0 +1,73 @@
+/* OJO : Si se usa # entonces se debe llamar con ID (este se aplica solo a un elemento)
+         Si se usa . entonces se puede llamar con CLASS(este se puede aplicar a mas elementos) */
+#header img{
+    width: 80px ;
+}
+#header{
+    background-color: #1c3643;
+}
+#texto-navbar a{
+    color: darkgray;
+}
+#footer{
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+}
+/*Esto significa que a los enlaces que esten dentro de footer*/
+#footer a{
+    color:white;  
+}
+.btn-empresa{
+    background-color:#97c93e;
+    color:white;  
+}
+.btn-empresa:hover{ /*Cuando paso encima del boton se oscurece un poco*/
+    background-color: #75963a;
+}
+.btn-outline-light{
+    
+}
+/*Padding al footer para que no este muy pegado*/
+#texto-empresa {
+    color:#97c93e !important
+}
+
+#carrusel .carousel-inner img{
+    /* 70 de viewheight es decir de lo que vemos segun la pantalla usara el 70% 
+       OJO 70% de lo que vemos, no de la pagina web en si.(RECORDAR VIDEO DE YOUTUBE LOS COLORES) */
+    max-height: 70vh;  
+    object-fit: cover; /*Para que no se distorsione, sino que se reduzca o agrande uniformemente*/
+    filter: grayscale(70%); /* Queda Lindo */
+}
+#carrusel{
+    position:relative;
+}
+#carrusel .overlay{
+    position:absolute; /*Se expande o cubre el largo y el ancho del carrusel*/
+    top: 0;    /*No deja espacio ni arriba*/
+    bottom: 0; /*Ni abajo*/
+    left: 0;   /*Ni izq */
+    right: 0; /* Ni der */
+    color:white; /*Todo lo que escriba sera de blanco*/
+    background-color: rgba(0,0,0,0,0.5);
+}
+#carrusel .overlay .container,
+#carrusel .overlay .row{ 
+    height: 100%;
+
+}
+#drop-down-nav a{
+    color: black;
+}
+#place-time img{
+    max-width:100%; /*Usa solo el 100% del espacio que se le asigno a esa columna*/
+}
+#place-time{
+    background-color:#1c3643;
+}
+/*Reduzco el tamano de las fotos de los speakers*/
+#speakers img{
+    max-width: 80%;
+}
+body {
+    position: relative;
+  }
